@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>شروع در Nodejs | مستندات سپیداران</title>
+    <meta name="description" content="سیستم تولید سریال برای شرکت سپیدسیستم">
+    <link rel="icon" href="/logo.png">
+  <link rel="stylesheet" href="/vazir-font/font-face.css">
+  <link rel="stylesheet" href="/material-iconfont/material-icons.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.c443c43f.css" as="style"><link rel="preload" href="/assets/js/app.31292a52.js" as="script"><link rel="preload" href="/assets/js/11.7eef4e2b.js" as="script"><link rel="prefetch" href="/assets/js/10.a275305d.js"><link rel="prefetch" href="/assets/js/12.6c81cb71.js"><link rel="prefetch" href="/assets/js/13.c0fb1f24.js"><link rel="prefetch" href="/assets/js/14.1cabc000.js"><link rel="prefetch" href="/assets/js/15.df4a9153.js"><link rel="prefetch" href="/assets/js/16.15f5eeda.js"><link rel="prefetch" href="/assets/js/17.59a8d854.js"><link rel="prefetch" href="/assets/js/18.f7c068e2.js"><link rel="prefetch" href="/assets/js/19.8d24c895.js"><link rel="prefetch" href="/assets/js/2.0b8e448f.js"><link rel="prefetch" href="/assets/js/20.da30d635.js"><link rel="prefetch" href="/assets/js/21.b0a142cc.js"><link rel="prefetch" href="/assets/js/22.13fba0b3.js"><link rel="prefetch" href="/assets/js/23.cb1c7019.js"><link rel="prefetch" href="/assets/js/24.023dc48b.js"><link rel="prefetch" href="/assets/js/25.7d8b40ae.js"><link rel="prefetch" href="/assets/js/26.74afaf03.js"><link rel="prefetch" href="/assets/js/27.88cb9dc6.js"><link rel="prefetch" href="/assets/js/28.36546f37.js"><link rel="prefetch" href="/assets/js/29.e95ea7b6.js"><link rel="prefetch" href="/assets/js/3.fdd0de66.js"><link rel="prefetch" href="/assets/js/30.8d4275c2.js"><link rel="prefetch" href="/assets/js/31.764a06b5.js"><link rel="prefetch" href="/assets/js/4.19f95eb5.js"><link rel="prefetch" href="/assets/js/5.e9c03967.js"><link rel="prefetch" href="/assets/js/6.3e33670b.js"><link rel="prefetch" href="/assets/js/7.93817d76.js"><link rel="prefetch" href="/assets/js/8.ae45ebe3.js"><link rel="prefetch" href="/assets/js/9.ce9c428d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c443c43f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"> <header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">
+      مستندات سپیداران
+    </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/01-introduction/" class="nav-link">مقدمه</a></div><div class="nav-item"><a href="/02-server-side/" class="nav-link router-link-active">سمت سرور</a></div><div class="nav-item"><a href="/03-frontend/" class="nav-link">سمت کلاینت</a></div><div class="nav-item"><a href="/04-database/" class="nav-link">دیتابیس</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/01-introduction/" class="nav-link">مقدمه</a></div><div class="nav-item"><a href="/02-server-side/" class="nav-link router-link-active">سمت سرور</a></div><div class="nav-item"><a href="/03-frontend/" class="nav-link">سمت کلاینت</a></div><div class="nav-item"><a href="/04-database/" class="nav-link">دیتابیس</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/02-server-side/01-start.html" class="active sidebar-link">شروع در Nodejs</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/02-server-side/01-start.html#مقدمه-سمت-سرور" class="sidebar-link">مقدمه سمت سرور</a></li><li class="sidebar-sub-header"><a href="/02-server-side/01-start.html#اجرا-برای-توسعه" class="sidebar-link">اجرا برای توسعه</a></li><li class="sidebar-sub-header"><a href="/02-server-side/01-start.html#قرار-دادن-برنامه-در-سرور-deploy" class="sidebar-link">قرار دادن برنامه در سرور - Deploy</a></li></ul></li><li><a href="/02-server-side/02-directory-structure.html" class="sidebar-link">ساختار فایلی برنامه</a></li><li><a href="/02-server-side/03-challenge.html" class="sidebar-link">چالش های سمت سرور</a></li><li><a href="/02-server-side/04-api.ts.html" class="sidebar-link">فایل Api.ts -  ایندکس سرور</a></li><li><a href="/02-server-side/05-schema.html" class="sidebar-link">معرفی Schema</a></li><li><a href="/02-server-side/06-data-access-layer.html" class="sidebar-link">معرفی لایه دسترسی به داده</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="شروع-در-nodejs"><a href="#شروع-در-nodejs" aria-hidden="true" class="header-anchor">#</a> شروع در <code>Nodejs</code></h1> <h2 id="مقدمه-سمت-سرور"><a href="#مقدمه-سمت-سرور" aria-hidden="true" class="header-anchor">#</a> مقدمه سمت سرور</h2> <p>همان گونه که در بخش مقدمه آمده بود ، ما برای سمت سرور این برنامه از
+<code>Nodejs</code>
+بهره بردیم ،  دنیای
+<code>Nodejs</code>
+تجربه بهتری از سمت سرور به برنامه نویسان ارائه داده است و در هنگام نگارش این سند ،در نسخه یازده می باشد بعد این همه سال
+این پروژه به بلوغ فوق العاده ای رسیده ، و هر لحاظ (امکانات-سرعت توسعه -کارایی -پایداری) از بالاترین استاندارد پیروی میکند
+تیم توسعه به دنبال یک فریم ورک مناسب برای سمت سرور بود و در نهایت در تیم توسعه تصمیم براین  شد تجربه فریم ورک نیز در سمت سرور با این محیط برنامه نویسی داشته باشیم
+برای توسعه هسته فریم ورک از جاوا-اسکریپت
+<code>ES8</code>
+و برای ایجاد دامین
+از
+<code>TypeScript</code>
+بهره بردیم
+فایل های
+<code>TypeScript</code>
+بوسیله
+<code>Webpack</code>
+به جاوا-اسکریپت(این بار برای سمت سرور) تبدیل می شود</p> <ul><li>Server/Core Written in Pure Javascript for Nodejs</li> <li>Server/Domain Written in TypeScript</li></ul> <h2 id="اجرا-برای-توسعه"><a href="#اجرا-برای-توسعه" aria-hidden="true" class="header-anchor">#</a> اجرا برای توسعه</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="قرار-دادن-برنامه-در-سرور-deploy"><a href="#قرار-دادن-برنامه-در-سرور-deploy" aria-hidden="true" class="header-anchor">#</a> قرار دادن برنامه در سرور - Deploy</h2> <p>برنامه های
+<code>Nodejs</code>
+برای اجرای بصورت ویندوز سرویس نیاز یک اجرا کننده سرویسی دارند ، یکی از متداول ترین آنها
+<a href="https://nssm.cc/" target="_blank" rel="noopener noreferrer">nssm<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+می باشد ، اجرا این برنامه نیز در حالت ویندوز سرویس توسط همین برنامه انجام میشود</p> <p>انجام تنظیمات در
+<a href="https://nssm.cc/" target="_blank" rel="noopener noreferrer">nssm<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+بصورت خط فرمان می باشد
+برای سهولت کار می توانید از فایل زیر استفاده کنید</p> <div class="language-batch line-numbers-mode"><pre class="language-batch"><code><span class="token comment">REM install-nodejs-service.cmd </span>
+<span class="token command"><span class="token keyword">setlocal</span></span>
+<span class="token command"><span class="token keyword">cd</span> <span class="token parameter attr-name">/d</span> <span class="token variable">%~dp0</span></span>
+ 
+<span class="token command"><span class="token keyword">SET</span> <span class="token variable">CURRENTDIR</span><span class="token operator">=</span><span class="token variable">%cd%</span></span>
+<span class="token command"><span class="token keyword">SET</span> <span class="token variable">nssm</span><span class="token operator">=</span><span class="token variable">%CURRENTDIR%</span>\nssm.exe </span>
+<span class="token command"><span class="token keyword">SET</span> <span class="token variable">SERVICE_NAME</span><span class="token operator">=</span>sepidaran<span class="token operator">_</span>service</span>
+%nssm% stop %SERVICE_NAME% confirm
+<span class="token command"><span class="token keyword">TIMEOUT</span>   <span class="token number">3</span></span>
+
+%nssm% remove %SERVICE_NAME% confirm
+
+<span class="token command"><span class="token keyword">TIMEOUT</span>   <span class="token number">3</span></span>
+%nssm% install  %SERVICE_NAME% &quot;%CURRENTDIR%\node.exe&quot; &quot;%CURRENTDIR%\src\index.js&quot; --databaseConnection=&quot;%CURRENTDIR%\database-connection.json&quot;   --serverPort=8081 
+%nssm% set %SERVICE_NAME% AppDirectory &quot;%CURRENTDIR%&quot;
+%nssm%  start  %SERVICE_NAME% 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/02-server-side/02-directory-structure.html">
+          ساختار فایلی برنامه
+        </a> →
+      </span></p></div> </div></div></div>
+    <script src="/assets/js/app.31292a52.js" defer></script><script src="/assets/js/11.7eef4e2b.js" defer></script>
+  </body>
+</html>

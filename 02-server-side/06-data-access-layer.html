@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>معرفی لایه دسترسی به داده | مستندات سپیداران</title>
+    <meta name="description" content="سیستم تولید سریال برای شرکت سپیدسیستم">
+    <link rel="icon" href="/logo.png">
+  <link rel="stylesheet" href="/vazir-font/font-face.css">
+  <link rel="stylesheet" href="/material-iconfont/material-icons.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.c443c43f.css" as="style"><link rel="preload" href="/assets/js/app.31292a52.js" as="script"><link rel="preload" href="/assets/js/16.15f5eeda.js" as="script"><link rel="prefetch" href="/assets/js/10.a275305d.js"><link rel="prefetch" href="/assets/js/11.7eef4e2b.js"><link rel="prefetch" href="/assets/js/12.6c81cb71.js"><link rel="prefetch" href="/assets/js/13.c0fb1f24.js"><link rel="prefetch" href="/assets/js/14.1cabc000.js"><link rel="prefetch" href="/assets/js/15.df4a9153.js"><link rel="prefetch" href="/assets/js/17.59a8d854.js"><link rel="prefetch" href="/assets/js/18.f7c068e2.js"><link rel="prefetch" href="/assets/js/19.8d24c895.js"><link rel="prefetch" href="/assets/js/2.0b8e448f.js"><link rel="prefetch" href="/assets/js/20.da30d635.js"><link rel="prefetch" href="/assets/js/21.b0a142cc.js"><link rel="prefetch" href="/assets/js/22.13fba0b3.js"><link rel="prefetch" href="/assets/js/23.cb1c7019.js"><link rel="prefetch" href="/assets/js/24.023dc48b.js"><link rel="prefetch" href="/assets/js/25.7d8b40ae.js"><link rel="prefetch" href="/assets/js/26.74afaf03.js"><link rel="prefetch" href="/assets/js/27.88cb9dc6.js"><link rel="prefetch" href="/assets/js/28.36546f37.js"><link rel="prefetch" href="/assets/js/29.e95ea7b6.js"><link rel="prefetch" href="/assets/js/3.fdd0de66.js"><link rel="prefetch" href="/assets/js/30.8d4275c2.js"><link rel="prefetch" href="/assets/js/31.764a06b5.js"><link rel="prefetch" href="/assets/js/4.19f95eb5.js"><link rel="prefetch" href="/assets/js/5.e9c03967.js"><link rel="prefetch" href="/assets/js/6.3e33670b.js"><link rel="prefetch" href="/assets/js/7.93817d76.js"><link rel="prefetch" href="/assets/js/8.ae45ebe3.js"><link rel="prefetch" href="/assets/js/9.ce9c428d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c443c43f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"> <header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">
+      مستندات سپیداران
+    </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/01-introduction/" class="nav-link">مقدمه</a></div><div class="nav-item"><a href="/02-server-side/" class="nav-link router-link-active">سمت سرور</a></div><div class="nav-item"><a href="/03-frontend/" class="nav-link">سمت کلاینت</a></div><div class="nav-item"><a href="/04-database/" class="nav-link">دیتابیس</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/01-introduction/" class="nav-link">مقدمه</a></div><div class="nav-item"><a href="/02-server-side/" class="nav-link router-link-active">سمت سرور</a></div><div class="nav-item"><a href="/03-frontend/" class="nav-link">سمت کلاینت</a></div><div class="nav-item"><a href="/04-database/" class="nav-link">دیتابیس</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/02-server-side/01-start.html" class="sidebar-link">شروع در Nodejs</a></li><li><a href="/02-server-side/02-directory-structure.html" class="sidebar-link">ساختار فایلی برنامه</a></li><li><a href="/02-server-side/03-challenge.html" class="sidebar-link">چالش های سمت سرور</a></li><li><a href="/02-server-side/04-api.ts.html" class="sidebar-link">فایل Api.ts -  ایندکس سرور</a></li><li><a href="/02-server-side/05-schema.html" class="sidebar-link">معرفی Schema</a></li><li><a href="/02-server-side/06-data-access-layer.html" class="active sidebar-link">معرفی لایه دسترسی به داده</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/02-server-side/06-data-access-layer.html#مقدمه" class="sidebar-link">مقدمه</a></li><li class="sidebar-sub-header"><a href="/02-server-side/06-data-access-layer.html#نمونه-از-یک-لایه-دسترسی-به-داده" class="sidebar-link">نمونه از یک لایه دسترسی به داده</a></li><li class="sidebar-sub-header"><a href="/02-server-side/06-data-access-layer.html#عملیات-crud" class="sidebar-link">عملیات CRUD</a></li><li class="sidebar-sub-header"><a href="/02-server-side/06-data-access-layer.html#عملیات-crud-بر-روی-detail" class="sidebar-link">عملیات CRUD بر روی Detail</a></li><li class="sidebar-sub-header"><a href="/02-server-side/06-data-access-layer.html#کار-با-لایه-دسترسی-داده-بوسیله-کد" class="sidebar-link">کار با لایه دسترسی داده بوسیله کد</a></li><li class="sidebar-sub-header"><a href="/02-server-side/06-data-access-layer.html#توصیف-ماژول-دسترسی-به-داده-بوسیله-کدهای-typescript" class="sidebar-link">توصیف ماژول دسترسی به داده بوسیله کدهای TypeScript</a></li></ul></li></ul> </div> <div class="page"> <div class="content"><h1 id="معرفی-لایه-دسترسی-به-داده"><a href="#معرفی-لایه-دسترسی-به-داده" aria-hidden="true" class="header-anchor">#</a> معرفی لایه دسترسی به داده</h1> <h2 id="مقدمه"><a href="#مقدمه" aria-hidden="true" class="header-anchor">#</a> مقدمه</h2> <p>منظور از لایه دسترسی به داده فایل هایی است شامل دستورات
+<code>SQL</code>
+میشود</p> <ul><li>فرمت این فایل <code>markdown</code> می باشد اگرچه این فرمت بیشتر برای مستندسازی می باشد - در اینجا جنبه کد دارد</li> <li>جایگزین <code>ORM</code> - ما از آن استفاده نمی کنیم</li> <li>پیاده سازی مناسب <code>CRUD</code> - <code>Create Read Update Delete</code></li> <li>تولید اتوماتیک قسمت <code>CRUD</code> با وجود امکان تغییر آن توسط برنامه نویس</li> <li>هندل آسان داده جزئیات <code>Master/Detial</code> - در هنگام درج و بروزرسانی</li> <li>داشتن قابلیت پیشرفته فیلتر دینامیک</li> <li>امکان کش سمت مرورگر</li></ul> <div class="tip custom-block"><p class="custom-block-title">چرا `markdown`</p> <p>استفاده از فرمت
+<code>markdown</code>
+به عنوان لایه داده(سورس کد) امکان جداسازی و  رنگبندی دستورات
+<code>SQL</code>
+به توسعه دهندگان می دهند در نتیجه
+نیاز های پروژه(دیتابیس محور) را کاملا مرتفع نمود</p></div> <h2 id="نمونه-از-یک-لایه-دسترسی-به-داده"><a href="#نمونه-از-یک-لایه-دسترسی-به-داده" aria-hidden="true" class="header-anchor">#</a> نمونه از یک لایه دسترسی به داده</h2> <div class="language-raw line-numbers-mode"><pre class="language-text"><code>## Create
+```sql        
+INSERT INTO UserAccount([UserName],[PasswordHash]) 
+VALUES(@UserName,@PasswordHash) 
+```.
+-- Signed Generated Code`Create` with (4080a994f8060a0853182c6abd185d23)
+
+
+## Read
+```sql        
+SELECT [Id],[UserName],NULL AS [PasswordHash] 
+FROM [UserAccount] 
+WHERE (1=1)
+```.
+-- Signed Generated Code`Read` with (a101431bad0aa277ffa4a538b391e20d)
+
+## Update
+```sql        
+UPDATE UserAccount 
+SET [UserName]=@UserName,[PasswordHash]=COALESCE(@PasswordHash,[PasswordHash])
+WHERE  [id]=@id 
+```.
+-- Signed Generated Code`Update` with (0cd60dd5091938c420d9f71b7ac274dd)
+
+
+## Delete
+```sql        
+UPDATE UserAccount 
+SET [IsDeleted]=1 
+WHERE  [id]=@id
+```.
+-- Signed Generated Code`Delete` with (505ae58ecc0af53235940a9a957e1993)
+
+
+## Permissions(Create)
+```sql        
+INSERT INTO UserAccountPermissions([UserAccountId],[Permission]) 
+VALUES(@UserAccountId,@Permission) 
+```.
+-- Signed Generated Code`Permissions(Create)` with (d2dc2b1a3e121e49e5517ffbc8ddbfb7)
+
+
+## Permissions(Read)
+```sql        
+SELECT [Id],[UserAccountId],[Permission] 
+FROM [UserAccountPermissions] 
+WHERE UserAccountId=@UserAccountId
+```.
+-- Signed Generated Code`Permissions(Read)` with (b5cf44d3bdc67897aa3e1b7981a06e28)
+
+
+## Permissions(Update)
+```sql        
+UPDATE UserAccountPermissions 
+SET [Permission]=@Permission
+WHERE  [id]=@id
+```.
+-- Signed Generated Code`Permissions(Update)` with (69732f6cf1d3b522dce718dd513b3a07)
+
+
+## Permissions(Delete)
+```sql        
+UPDATE UserAccountPermissions 
+SET [IsDeleted]=1 
+WHERE  [id]=@id
+```.
+-- Signed Generated Code`Permissions(Delete)` with (2aae8da2ad10542b3e088645443b283c)
+
+
+## FullRead
+```sql        
+SELECT [Id],[UserName],  [PasswordHash] 
+FROM [UserAccount] 
+WHERE (1=1)
+```.
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">توجه</p> <p>در مثال بالا  در هنگام بستن <code>sql</code>
+کاراکتر <code>.</code>
+اضافه درج شده است که برای نمایش صحیح دو  <code>markdown</code>
+در داخل هم میباشد</p></div> <h2 id="عملیات-crud"><a href="#عملیات-crud" aria-hidden="true" class="header-anchor">#</a> عملیات <code>CRUD</code></h2> <p><code>CRUD</code> به عنوان چهار عملی
+در مدل <code>REST</code>
+می باشد و معمولا نیز برای آن در این سطح دستورات
+<code>SQL</code>
+درست شده است اگر شما با
+<code>MS-SQL-SERVER</code>
+کار کرده باشید شکل کدنویسی  <code>## Create</code>,<code>## Delete</code>,<code>## Update</code> بسیار شبیه به
+<code>Stored Produce</code> میباشد
+ولی هدف
+<code>## Read</code>
+خواندن اطلاعات همراه با فیلتر دینامیک است . هسته سیستم
+فیلتر دینامیک تبدیل به دستورات <code>SQL-Where</code> میکند و
+آنرا با <code>(1=1)</code> جایگزین میکند</p> <div class="tip custom-block"><p class="custom-block-title">نکته</p> <p>سیستم
+<code>Code-Generator</code>
+داخل هسته سیستم کد های
+<code>CRUD</code>
+به صورت اتوماتیک از روی <code>Schema</code> تولید می کند در صورتی که آنرا بخواهید تغییر بدهید، برنامه دوباره آن قسمت
+را تولید نخواهد کرد و کدهای شما سالم خواهد ماند ، مکانسیزم شناسایی این تغییر بوسیله روش
+<code>Hash(MD5)</code>
+میباشد در زیر هر قسمت کدزیر تولید میشود
+<code>-- Signed Generated Code'Permissions(Delete)' with (2aae8da2ad10542b3e088645443b283c)</code></p></div> <h2 id="عملیات-crud-بر-روی-detail"><a href="#عملیات-crud-بر-روی-detail" aria-hidden="true" class="header-anchor">#</a> عملیات <code>CRUD</code> بر روی <code>Detail</code></h2> <p>در داخل
+<code>Schema</code>
+آرایه ها نمایانگر
+<code>Detail</code>
+می باشد در مثال بالا دیتا موجود در فیلد
+<code>Permission</code> به عنوان جزئیات می باشد که برای آن
+<code>CRUD</code> تعریف شده است</p> <ul><li><code>## Permissions(Create)</code> برای ایجاد(درج) یکی از مجوز های مربوط به کاربر</li> <li><code>## Permissions(Read)</code> برای خواندن همه مجوز های مربوط به کاربر</li> <li><code>## Permissions(Update)</code> برای بروزرسانی یکی از مجوز های مربوط به کاربر</li> <li><code>## Permissions(Delete)</code> برای حذف یکی از مجوز های مربوط به کاربر</li></ul> <h2 id="کار-با-لایه-دسترسی-داده-بوسیله-کد"><a href="#کار-با-لایه-دسترسی-داده-بوسیله-کد" aria-hidden="true" class="header-anchor">#</a> کار با لایه دسترسی داده بوسیله کد</h2> <p><code>webpack</code>و <code>typescript</code>
+به نحوی تنظیم شده است که فایل ها با پسوند
+<code>md</code>
+در قالب یک نمونه از کلاس
+<code>DataModel</code>
+در می آورد</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">import</span> userAccountDA <span class="token keyword">from</span> <span class="token string">'@data-access/user-account.md'</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">requestHandler</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> username <span class="token punctuation">,</span> password <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>body<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> targetUser <span class="token operator">=</span>  <span class="token keyword">await</span> userAccountDA<span class="token punctuation">.</span><span class="token function">singleRow</span><span class="token punctuation">(</span><span class="token string">'FullRead'</span><span class="token punctuation">,</span> req<span class="token punctuation">,</span> <span class="token punctuation">{</span> userName_eq<span class="token punctuation">:</span>username <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> targetUser
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="توصیف-ماژول-دسترسی-به-داده-بوسیله-کدهای-typescript"><a href="#توصیف-ماژول-دسترسی-به-داده-بوسیله-کدهای-typescript" aria-hidden="true" class="header-anchor">#</a> توصیف ماژول دسترسی به داده بوسیله کدهای <code>TypeScript</code></h2> <p>توابع موجود در هر لایه دسترسی به داده</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">namespace</span> DataModelModule <span class="token punctuation">{</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">setSchema</span><span class="token punctuation">(</span><span class="token parameter">schema<span class="token punctuation">:</span> <span class="token builtin">any</span></span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> scaler<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">export</span> <span class="token keyword">function</span> fetchSingleRow<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> fetchSingleRow<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">export</span> <span class="token keyword">function</span> singleRow<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> singleRow<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">export</span> <span class="token keyword">function</span> fetchAll<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> fetchAll<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> query<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">dynamicQuery</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+      <span class="token keyword">export</span> <span class="token keyword">function</span> nonQuery<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>commandName<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token operator">...</span>paramsCollection<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Request <span class="token operator">|</span> Object<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">number</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/02-server-side/05-schema.html" class="prev">
+          معرفی Schema
+        </a></span> <!----></p></div> </div></div></div>
+    <script src="/assets/js/app.31292a52.js" defer></script><script src="/assets/js/16.15f5eeda.js" defer></script>
+  </body>
+</html>
